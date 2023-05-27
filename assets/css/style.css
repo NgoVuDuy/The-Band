@@ -1,0 +1,351 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+
+}
+
+#header {
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav li {
+    display: inline-block;
+    position: relative;
+}
+
+#nav .subnav {
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    background-color: black;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+
+#nav .subnav li {
+    display: block;
+    padding: 42px 120px;
+}
+
+#nav .subnav li a {
+    display: block;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-decoration: none;
+    transform: translate(-50%, -50%);
+}
+
+#nav .subnav li:hover a {
+    color: black;
+
+}
+
+
+#nav > li > a {
+    text-transform: uppercase;
+}
+
+#nav > li > a {
+
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 40px;
+}
+
+#nav li:hover {
+    background-color: rgb(238, 160, 173);
+    color: black;
+}
+
+#nav li a:hover {
+    color: black;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .down {
+    font-size: 14px;
+}
+
+#header .search-bnt {
+    display: block;
+    float: right;
+    padding: 0 30px;
+}
+
+#header .search-icon {
+    display: block;
+    color: white;
+    line-height: 46px;
+}
+
+#header .search-bnt:hover {
+    display: block;
+    background-color: rgb(238, 160, 173);
+    color: black;
+    cursor: pointer;
+}
+
+#header .search-bnt:hover .search-icon {
+    color: black;
+}
+
+#slider {
+    padding-top: 66%;
+    margin-top: 46px;
+    background: url(/assets/img/blackpink.jpg) center / cover no-repeat;
+}
+
+#slider .text-content {
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+#slider .text-heading {
+    padding-bottom: 10px;
+}
+
+#slider .text-heading:hover {
+    color: rgb(238, 160, 173);
+}
+
+#slider .text-description:hover {
+    color: rgb(238, 160, 173);
+
+}
+
+#content .content-section .about-text{
+    font-size: larger;
+}
+
+.content-section {
+    width: 800px;
+    margin-left: auto;
+    margin-right:auto;
+    padding: 64px 0;
+}
+.content-section .section-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+    border: 1px solid black;
+    padding: 4px;
+    background-color: rgb(238, 160, 173);
+}
+.content-section .section-sub-heading {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 15px;
+    opacity: 0.8;
+}
+.content-section .about-text {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+
+#blackpink {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}
+
+#blackpink .member {
+    display: inline;
+    margin: 28px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 1);
+
+}
+
+#blackpink .member p{
+    display: inline;
+}
+
+#blackpink .name p{
+    display: inline-block;
+    margin: 20px 114px;
+    letter-spacing: 2px;
+    border: 2px solid black;
+    padding: 4px;
+    font-weight: bold;
+    background-color: rgb(238, 160, 173);
+    box-shadow: 0 0 20px rgb(186, 102, 116);
+}
+
+#blackpink .buy-sticket {
+    height: 600px;
+    margin-top: 30px;
+    color: rgb(238, 160, 173);
+    background-color: rgba(0, 0, 0, 0.97);
+    position: relative;
+    box-shadow: 0 0 20px black;
+}
+
+#blackpink .buy-sticket .tour {
+    position:absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+}
+
+#blackpink .w3-container {
+    border: 3px solid rgb(238, 160, 173);
+    width: 35%;
+    padding: 8px;
+    margin-left: 10px;
+    box-shadow: 0 0 10px  rgb(238, 160, 173);
+    ;
+
+
+}
+
+#blackpink .w3-container p  {
+    margin-left: 30px;
+    padding: 10px;
+}
+
+#blackpink .w3-container b{
+    margin-right: 15px;
+
+
+}
+
+#blackpink .buy-sticket .lightstick {
+    position: absolute;
+    width: 20%;
+    height: 30%;
+    bottom: 0;
+    left: 0;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+#blackpink .buy-sticket .sticket-heading{
+    display: inline-block;
+    margin-left: 80px;
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 2px;
+
+}
+
+.ti-hand-point-right {
+    margin-top: 80px;
+    margin-left: 80px;
+    font-size: 25px;
+}
+
+.ti-hand-point-left {
+    margin-top: 80px;
+    font-size: 25px;
+
+}
+
+button {
+    text-transform: uppercase;
+    box-shadow: 0 0 10px rgb(238, 160, 173);
+    font-weight: bold;
+    background-color: rgb(238, 160, 173);
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 8px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: rgb(207, 119, 134);
+}
+
+#footer {
+    width: 100%;
+    margin-top: 30px;
+    height: 1000px;
+    background-color: rgb(238, 160, 173);
+    position: relative;
+}
+
+#footer .info {
+    position: absolute;
+    width: 1200px;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#footer .info .content-info {
+    color: rgb(238, 160, 173);
+    text-align: center;
+    margin-top: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#footer .info .icon-info {
+    color: rgb(238, 160, 173);
+    margin-left: 120px;
+    margin-top: 80px;
+}
+
+#footer .info .queen {
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    right: 20%;
+    top: 15%;
+}
+
+
+#footer .info .icon-info .icon{
+    display: block;
+    margin: 15px;
+}
+
+#footer .info .icon-info ins{
+    margin-left: 20px;
+}
+
+#footer .info .icon-info ins:hover{
+    color: rgb(207, 119, 134);
+}
+
+.chibi {
+    width: 24%;
+    height: 12%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 80%;
+
+}
