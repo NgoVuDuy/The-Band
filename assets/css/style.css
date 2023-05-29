@@ -144,7 +144,7 @@ html {
     position: relative;
     padding-top: 66%;
     margin-top: 46px;
-    background: url(/assets/img/blackpink.jpg) center / cover no-repeat;
+    background: url(./assets/img/blackpink.jpg) center / cover no-repeat;
 }
 
 .text-in {
