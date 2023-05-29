@@ -3,6 +3,7 @@
 <head>
     <link rel="icon" type="image/x-icon" href="/assets/img/Logo-Blackpink.png">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/icon/themify-icons/themify-icons.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +13,7 @@
 <body>
     <div id="main">
 
-        <div id="header">
+        <div id="header" class="js-menu-res menu-res">
             <ul id="nav">
                 <li><a href="#slider" target="_self">Trang chủ</a></li>
                 <li><a href="#blackpink" target="_self">Thành viên</a></li>
@@ -27,14 +28,24 @@
                     </ul>
                 </li>
             </ul>
-
-            <div class="search-bnt">
+            <div  class="menu-bnt js-menu-bnt">
+                <i class="ti-menu"></i>
+            </div>
+            <div class="search-bnt js-search-bnt">
                 <i class="search-icon ti-search"></i>
             </div>
-
+            
         </div>
 
         <div id="slider">
+            <div class="fixed">
+                <label for="" class="text-in js-text-in">
+                    <input class="text-search" type="text" name="" id="" placeholder="Search">
+                    <button class="text-find js-text-find" type="button">Search</button>
+
+
+                </label>
+            </div>
             <div class="text-content">
 
                 <h2 class="text-heading">
@@ -56,16 +67,16 @@
         </div>
         <div id="blackpink">
             <div class="member">
-                <img src="/assets/img/lisa.jpg" alt="Lisa" class="lisa" width="20%" height="20%">
+                <img src="/assets/img/lisa.jpg" alt="Lisa" class="lisa img-res" width="20%" height="20%">
             </div>
             <div class="member">
-                <img src="/assets/img/jennie.png" alt="Jennie" class="jennie" width="20%" height="20%">
+                <img src="/assets/img/jennie.png" alt="Jennie" class="jennie img-res" width="20%" height="20%">
             </div>
             <div class="member">
-                <img src="/assets/img/jisoo.jpeg" alt="Rose" class="rose" width="20%" height="20%">
+                <img src="/assets/img/jisoo.jpeg" alt="Rose" class="rose img-res" width="20%" height="20%">
             </div>
             <div class="member">
-                <img src="/assets/img/rose.jpeg" alt="Jisoo" class="jisoo" width="20%" height="20%">
+                <img src="/assets/img/rose.jpeg" alt="Jisoo" class="jisoo img-res" width="20%" height="20%">
             </div>
             <div id="buy" class="name">
                 <p>LISA</p>
@@ -109,9 +120,10 @@
                     </p>   
                 </form>
                 <i class="hand ti-hand-point-right"></i>
-                <button type="button" onclick="alert('Bạn đã đặt vé thành công')">Đặt vé</button>
+                <button class="box-ticket js-box-ticket" type="button">Đặt vé</button>
                 <i class="hand ti-hand-point-left"></i>
                 <!--<img src="/assets/img/lightstick.png" alt="lightstick" class="lightstick"> -->
+
 
             </div>
         </div>
@@ -134,5 +146,89 @@
         </div>
 
     </div>
+
+    <div class="modal js-modal">
+        <div class="modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="ti-close"></i>
+            </div>
+            <header class="modal-header">
+                <i class="ti-bag"></i>
+                Tickets
+            </header>
+
+            <div class="modal-body">
+                <label for="" class="modal-label">
+                    <i class="ti-shopping-cart"></i>
+                    Ticket $15 - one person<br>
+                </label>
+                <input type="text" class="modal-input" placeholder="How many ?">
+
+                <label for="" class="modal-label">
+                    <br><i class="ti-user"></i>
+                    Sen to<br>
+                </label>
+                <input type="email" class="modal-input" placeholder="Email ?">
+                <br>
+                <button class="buy-ticket js-buy-ticket">
+                    Pay
+                    <i class="ti-check"></i>
+                </button>
+            </div>
+            <footer class="modal-footer">
+                <p class="modal-help">Need  <a href="">help ?</a></p>
+            </footer>
+        </div>
+    </div>
+    <script>
+
+    </script>
+
+    <script>
+        const buyBtn =document.querySelector('.js-box-ticket')
+        const modal = document.querySelector('.js-modal')
+        const modalClose = document.querySelector('.js-modal-close')
+        const modalBuy = document.querySelector('.js-buy-ticket')
+        const getIn = document.querySelector('.js-text-in')
+        const getSearch = document.querySelector('.js-search-bnt')
+        const searchOn = document.querySelector('.js-text-find')
+        const getMenu = document.querySelector('.js-menu-res')
+        const getMenuList = document.querySelector('.js-menu-bnt')
+
+
+        function showTicket() {
+            modal.classList.add('open')
+        }
+
+        function hideTicket() {
+            modal.classList.remove('open')
+        }
+
+        function Paied() {
+            alert('Bạn đã đặt vé thành công')
+        }
+
+        function Search() {
+            getIn.classList.add('open')
+        }
+
+        function searchOff() {
+            getIn.classList.remove('open')
+        }
+
+        function menuClick() {
+            getMenu.classList.remove('menu-res')
+         }
+
+        buyBtn.addEventListener('click', showTicket);
+        modalClose.addEventListener('click', hideTicket);
+        modalBuy.addEventListener('click', hideTicket);
+        modalBuy.addEventListener('click', Paied);
+        getSearch.addEventListener('click', Search);
+        searchOn.addEventListener('click', searchOff);
+        getMenuList.addEventListener('click', menuClick)
+
+
+    </script>
 </body>
 </html>

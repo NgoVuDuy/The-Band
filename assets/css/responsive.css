@@ -1,0 +1,82 @@
+@media (max-width: 740px) {
+
+    #header .search-bnt {
+        width: 37%;
+        padding: 0px 58px;
+        float: none;
+    }
+    #header .ti-menu {
+        display: block;
+    }
+    #nav li {
+        display: block;
+        position: relative;
+    }
+    #header {
+        overflow: hidden;
+    }
+    .content-section {
+        max-width: 100%;
+    }
+    #footer .info {
+        max-width: 100%;
+    }
+    #footer .info .icon-info {
+        margin-left: 0px;
+    }
+    #footer .info .queen {
+        width: 45%;
+        right: 0;
+    }
+    .chibi {
+        width: 50%;
+    }
+
+    #blackpink {
+        max-width: 100%;
+    }
+
+    #blackpink .member {
+        margin: 30px 0px;
+        display: block;
+        width: 100%;
+    }
+    .name {
+        display: none;
+    }
+    #blackpink .w3-container p {
+        padding: 10px;
+    }
+    #blackpink .w3-container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .img-res {
+        display: block;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tour {
+        display: none;
+    }
+    .modal .modal-container {
+        max-width: 100%;
+    }
+    .modal .modal-body .modal-label {
+        display: block;
+        margin-left: 0px;
+    }
+    .modal-input {
+        padding: 5px 0px;
+        width: 100%;
+    }
+    .modal .modal-body .buy-ticket {
+        width: 100%;
+        padding: 10px 0px;
+        margin: 0px;
+    }
+}

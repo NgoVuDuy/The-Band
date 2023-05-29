@@ -6,14 +6,11 @@
 
 html {
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
-#main {
-
-}
 
 #header {
-    height: 46px;
     background-color: black;
     position: fixed;
     top: 0;
@@ -115,11 +112,71 @@ html {
     color: black;
 }
 
+
+#header .menu-bnt {
+    display: block;
+    float: right;
+    padding: 0 30px;
+}
+
+#header .ti-menu {
+    display: none;
+    color: white;
+    line-height: 46px;
+}
+
+#header .menu-bnt:hover {
+    display: block;
+    background-color: rgb(238, 160, 173);
+    color: black;
+    cursor: pointer;
+}
+
+#header .menu-bnt:hover .ti-menu {
+    color: black;
+}
+
+.menu-res {
+    height: 46px;
+}
+
 #slider {
+    position: relative;
     padding-top: 66%;
     margin-top: 46px;
     background: url(/assets/img/blackpink.jpg) center / cover no-repeat;
 }
+
+.text-in {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 35%;
+    height: 3%;
+    right: 28px;
+    margin-top: 18px;
+    animation: goLeft ease 0.5s;
+}
+
+.text-find {
+    height: 100%;
+    padding: 0px 10px;
+    margin-left: 4px;
+    background-color: rgb(238, 160, 173);
+}
+
+.text-find:hover {
+    background-color: rgb(186, 102, 116);
+}
+
+
+.text-in .text-search {
+    width: 80%;
+    height: 100%;
+    padding-left: 30px;
+    font-size: 16px;
+}
+
 
 #slider .text-content {
     color: white;
@@ -186,6 +243,23 @@ html {
 
 #blackpink .member p{
     display: inline;
+}
+
+
+#blackpink .member .lisa:hover{
+    opacity: 0.6;
+}
+
+#blackpink .member .jennie:hover{
+    opacity: 0.6;
+}
+
+#blackpink .member .rose:hover{
+    opacity: 0.6;
+}
+
+#blackpink .member .jisoo:hover{
+    opacity: 0.6;
 }
 
 #blackpink .name p{
@@ -271,18 +345,18 @@ html {
 
 }
 
-button {
+.box-ticket {
     text-transform: uppercase;
     box-shadow: 0 0 10px rgb(238, 160, 173);
     font-weight: bold;
     background-color: rgb(238, 160, 173);
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 8px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 15px;
     margin-top: 20px;
 }
 
-button:hover {
+.box-ticket:hover {
     background-color: rgb(207, 119, 134);
 }
 
@@ -342,10 +416,119 @@ button:hover {
 
 .chibi {
     width: 24%;
-    height: 12%;
+    height: 14%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     top: 80%;
+
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+}
+
+.open {
+    display: flex;
+}
+
+.modal .modal-container {
+    background-color: white;
+    width: 900px;
+    min-height: 200px;
+    position: relative;
+    animation: goDown ease 0.5s;
+    
+
+}
+
+.modal .modal-header {
+    background-color: rgb(238, 160, 173);
+    padding: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-size: 20px;
+}
+
+.modal .modal-header i{
+    margin-right: 18px;
+}
+
+
+
+
+
+
+.modal .modal-close {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    padding: 15px;
+    cursor: pointer;
+   
+}
+
+.modal .modal-close i{
+    display: block;
+}
+
+.modal .modal-close:hover {
+    background-color: rgb(207, 119, 134);
+}
+
+
+.modal .modal-body .modal-label {
+    display: inline-block;
+    margin-left: 35px;
+    margin-bottom: 15px;
+}
+
+.modal .modal-body .buy-ticket {
+    padding: 10px 380px;
+    margin: 0px 38px;
+    background-color: rgb(238, 160, 173);
+    font-size: 20px;
+    border: 1px;
+}
+
+.modal .modal-body .buy-ticket:hover {
+    background-color: rgb(207, 119, 134);
+
+}
+.modal-footer .modal-help {
+    text-align: right;
+    margin: 5px 20px;
+}
+
+@keyframes goDown {
+    from {
+        transform: translateY(-520px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes goLeft {
+    from {
+        transform: translateX(390px);   
+    }
+    to {
+        transform: translateX(0);
+    }
 
 }
