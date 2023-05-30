@@ -15,7 +15,7 @@
 
         <div id="header" class="js-menu-res menu-res">
             <ul id="nav">
-                <li><a href="#slider" target="_self">Trang chủ</a></li>
+                <li><a href="#" target="_self">Trang chủ</a></li>
                 <li><a href="#blackpink" target="_self">Thành viên</a></li>
                 <li><a href="#buy" target="_self">Mua vé</a></li>
                 <li><a href="#footer" target="_self">Liên hệ</a></li>
@@ -37,7 +37,8 @@
             
         </div>
 
-        <div id="slider">
+    
+    <div id="slider">
             <div class="fixed">
                 <label for="" class="text-in js-text-in">
                     <input class="text-search" type="text" name="" id="" placeholder="Search">
@@ -218,7 +219,12 @@
 
         function menuClick() {
             getMenu.classList.remove('menu-res')
-         }
+        }
+
+        function menuOut() {
+            getMenu.classList.add('menu-res')
+        }
+
 
         buyBtn.addEventListener('click', showTicket);
         modalClose.addEventListener('click', hideTicket);
@@ -227,6 +233,8 @@
         getSearch.addEventListener('click', Search);
         searchOn.addEventListener('click', searchOff);
         getMenuList.addEventListener('click', menuClick)
+        getSearch.addEventListener('click', menuOut)
+        
 
 
     </script>

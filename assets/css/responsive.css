@@ -16,7 +16,7 @@
         overflow: hidden;
     }
     .content-section {
-        max-width: 100%;
+        max-width: 90%;
     }
     #footer .info {
         max-width: 100%;
@@ -27,13 +27,15 @@
     #footer .info .queen {
         width: 45%;
         right: 0;
+        height: 20%;
+        top: 20%;
     }
     .chibi {
         width: 50%;
     }
 
     #blackpink {
-        max-width: 100%;
+        max-width: 90%;
     }
 
     #blackpink .member {
@@ -64,7 +66,7 @@
         display: none;
     }
     .modal .modal-container {
-        max-width: 100%;
+        max-width: 90%;
     }
     .modal .modal-body .modal-label {
         display: block;
@@ -79,4 +81,130 @@
         padding: 10px 0px;
         margin: 0px;
     }
+
+    .content {
+        margin: 0px 8%;
+    }
+    .ti-hand-point-right {
+        margin-left: 50px;
+    }
+
+    .text-in {
+        width: 70%;
+        height: 6%;
+    }
+
+    .text-in .text-search {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 740px) and (max-width: 1023px){
+    #header .search-bnt {
+        width: 37%;
+        padding: 0px 58px;
+        float: none;
+    }
+    #header .ti-menu {
+        display: block;
+    }
+    #nav li {
+        display: block;
+        position: relative;
+    }
+    #header {
+        overflow: hidden;
+    }
+    .content-section {
+        max-width: 90%;
+    }
+    #footer .info {
+        max-width: 100%;
+    }
+    #footer .info .icon-info {
+        margin-left: 0px;
+    }
+    #footer .info .queen {
+        width: 45%;
+        right: 0;
+        height: 20%;
+        top: 20%;
+    }
+    .chibi {
+        width: 50%;
+    }
+
+    #blackpink {
+        max-width: 90%;
+    }
+
+    #blackpink .member {
+        margin: 30px 0px;
+        display: block;
+        width: 100%;
+    }
+    .name {
+        display: none;
+    }
+    #blackpink .w3-container p {
+        padding: 10px;
+    }
+    #blackpink .w3-container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .img-res {
+        display: block;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tour {
+        display: none;
+    }
+    .modal .modal-container {
+        max-width: 90%;
+    }
+    .modal .modal-body .modal-label {
+        display: block;
+        margin-left: 0px;
+    }
+    .modal-input {
+        padding: 5px 0px;
+        width: 100%;
+    }
+    .modal .modal-body .buy-ticket {
+        width: 100%;
+        padding: 10px 0px;
+        margin: 0px;
+    }
+
+    .content {
+        margin: 0px 8%;
+    }
+    .ti-hand-point-right {
+        margin-left: 45px;
+    }
+
+    .text-in {
+        width: 70%;
+        height: 6%;
+    }
+
+    .text-in .text-search {
+        font-size: 14px;
+    }
+
+    .box-ticket {
+        margin: 20px 10px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+
+    
 }
